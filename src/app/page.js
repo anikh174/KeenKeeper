@@ -1,12 +1,14 @@
 import Banner from "@/components/homepage/Banner";
 import StaticCards from "@/components/homepage/StaticCards";
-import Image from "next/image";
+import YourFriend from "@/components/homepage/YourFriend";
+
 
 export default function Home() {
   return (
     <div>
       <Banner></Banner>
       <StaticCards></StaticCards>
+      <YourFriend></YourFriend>
     </div>
   );
 }
