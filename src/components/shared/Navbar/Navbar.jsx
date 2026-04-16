@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className=" bg-base-100 shadow-sm">
+    <div className=" bg-base-100 shadow-sm px-2 md:px-10 lg:px-0">
       <div className="flex justify-between items-center container mx-auto py-4">
         <h1 className="text-[#244D3F] text-2xl font-bold"><span className="text-black font-bold md:font-extrabold">Keen</span>Keeper</h1>
 

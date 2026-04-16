@@ -10,7 +10,7 @@ import { FadeLoader } from "react-spinners";
 const YourFriend = () => {
   const { friends, loading } = useFriends();
   return (
-    <div className="max-w-6xl mx-auto my-10">
+    <div className="max-w-6xl mx-auto my-10 p-10 lg:p-0">
       <div>
         <h1 className="text-2xl font-semibold text-[#1F2937] mb-4">Your Friends</h1>
 
