@@ -22,10 +22,10 @@ const Navbar = () => {
   return (
     <div className=" bg-base-100 shadow-sm">
       <div className="flex justify-between items-center container mx-auto py-4">
-        <h1 className="text-[#244D3F] text-lg md:text-2xl font-bold"><span className="text-black font-bold md:font-extrabold">Keen</span>Keeper</h1>
+        <h1 className="text-[#244D3F] text-2xl font-bold"><span className="text-black font-bold md:font-extrabold">Keen</span>Keeper</h1>
 
         <div>
-            <ul className="flex gap-3 items-center">
+            <ul className="flex gap-1 md:gap-3 items-center">
                 {navItems.map((item, ind)=>
                   <MyLink key={ind} href={item.path}>{item.text}</MyLink>
                 )}
