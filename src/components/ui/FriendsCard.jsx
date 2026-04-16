@@ -1,12 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaStar } from "react-icons/fa";
-import { LuDownload } from "react-icons/lu";
 
 const FriendsCard = ({ friend }) => {
   return (
-    <div className="hover:bg-gray-100 hover:scale-105 duration-300 hover:shadow-lg cursor-pointer">
+    <Link href={`/friends/${friend.id}`} className="hover:bg-gray-100 hover:scale-105 duration-300 hover:shadow-lg cursor-pointer">
       <div className="space-y-3 p-6 text-center shadow-md border border-gray-100">
         <Image
           src={friend.picture}
@@ -34,7 +32,7 @@ const FriendsCard = ({ friend }) => {
           `}>{friend.status}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
 
