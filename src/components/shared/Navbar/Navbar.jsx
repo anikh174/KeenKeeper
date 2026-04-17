@@ -33,7 +33,7 @@ const Navbar = () => {
         <div>
             <ul className="flex gap-1 md:gap-3 items-center">
                 {navItems.map((item, ind)=>
-                  <MyLink key={ind} href={item.path}><div className="flex gap-1 items-center text-[10px] md:text-lg">{item.icon}{item.text}</div></MyLink>
+                  <MyLink key={ind} href={item.path}><div className="flex gap-1 items-center text-[11px] font-bold md:text-lg">{item.icon}{item.text}</div></MyLink>
                 )}
             </ul>
         </div>
