@@ -3,9 +3,9 @@ import React from "react";
 import { HiOutlineBellSnooze } from "react-icons/hi2";
 import { IoArchiveOutline } from "react-icons/io5";
 import { MdOutlineDeleteOutline } from "react-icons/md";
-import callImg from "@/assets/call.png"
-import textImg from "@/assets/text.png"
-import videoImg from "@/assets/video.png"
+import CallToggleBtn from "@/components/Buttons/CallToggleBtn";
+import TextToggleBtn from "@/components/Buttons/TextToggleBtn";
+import VideoToggleBtn from "@/components/Buttons/VideoToggleBtn";
 
 const friendsPromise = async function () {
   const res = await fetch("http://localhost:3000/friendData.json");
@@ -108,20 +108,9 @@ const FriendsDetailsPage = async ({ params }) => {
                 </div>
 
                 <div className="flex flex-wrap md:justify-between gap-3 items-center">
-                    <div className="space-y-2 shadow-md border border-gray-100 py-2 px-11 md:py-4 md:px-16">
-                      <Image src={callImg} alt="" width={32} height={32}></Image>
-                      <p className="text-[18px] text-[#1F2937] font-bold">Call</p>
-                    </div>
-
-                    <div className="space-y-2 shadow-md border border-gray-100 py-2 px-11 md:py-4 md:px-16">
-                      <Image src={textImg} alt="" width={32} height={32}></Image>
-                      <p className="text-[18px] text-[#1F2937] font-bold">Text</p>
-                    </div>
-
-                    <div className="space-y-2 shadow-md border border-gray-100 py-2 px-26 md:py-4 md:px-16">
-                      <Image src={videoImg} alt="" width={32} height={32}></Image>
-                      <p className="text-[18px] text-[#1F2937] font-bold">Video</p>
-                    </div>
+                    <CallToggleBtn friend={friend}></CallToggleBtn>
+                    <TextToggleBtn friend={friend}></TextToggleBtn>
+                    <VideoToggleBtn friend={friend}></VideoToggleBtn>
                 </div>
             </div>
         </div>
