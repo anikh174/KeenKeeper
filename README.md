@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧠 KeenKeeper
 
-## Getting Started
+**KeenKeeper** is a simple and user-friendly friend tracking web app that helps you stay connected with the people who matter most. It allows users to monitor interactions, track last contact dates, and maintain meaningful relationships effortlessly.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 📇 **Friend Profiles**  
+  Store detailed information about your friends including name, email, bio, and tags.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- 🏷️ **Tag System**  
+  Categorize friends (e.g., `college`, `gym`, `family`) and display them beautifully in UI.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 📞 **Call Tracking**  
+  One-click call button to instantly update the last contacted date.
 
-## Learn More
+- 📅 **Real-Time Date Update**  
+  Automatically records the current date whenever you interact.
 
-To learn more about Next.js, take a look at the following resources:
+- ⏳ **Contact Status**  
+  Track friend status:
+  - `active`
+  - `on track`
+  - `due soon`
+  - `overdue`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 📊 **Smart Tracking Fields**
+  - `days_since_contact`
+  - `next_due_date`
+  - `goal` (how often you want to connect)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 🎨 **Modern UI**
+  Clean card-based design with responsive layout and smooth UX.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- ⚛️ React.js  
+- ⚡ Next.js  
+- 🎨 Tailwind CSS  
+- 📦 JSON-based mock data  
+
+---
+
+## 💡 Inspiration
+
+In today's busy life, we often forget to stay in touch with important people.  
+**KeenKeeper** solves that problem by making relationship tracking simple and intentional.
+
+---
+
+## 🧑‍💻 Author
+
+**Anik Hossain**  
+Frontend Developer  
+
+---
