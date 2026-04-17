@@ -84,22 +84,22 @@ const FriendsDetailsPage = async ({ params }) => {
         </div>
 
         <div className="flex flex-col gap-6">
-          <div className="grid grid-cols-3 gap-6">
-            <div className="shadow-md border border-gray-100 space-y-2 py-8 px-4 text-center rounded-lg">
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="shadow-md border border-gray-100 space-y-2 p-2 md:py-8 md:px-4 text-center rounded-lg">
               <p className="text-2xl font-semibold text-[#244D3F]">
                 {friend.days_since_contact}
               </p>
               <p className="text-[#64748B]">Days Since Contact</p>
             </div>
 
-            <div className="shadow-md border border-gray-100 space-y-2 py-8 px-4 text-center rounded-lg">
+            <div className="shadow-md border border-gray-100 space-y-2 p-2 md:py-8 md:px-4 text-center rounded-lg">
               <p className="text-2xl font-semibold text-[#244D3F]">
                 {friend.goal}
               </p>
               <p className="text-[#64748B]">Goal (Days)</p>
             </div>
 
-            <div className="shadow-md border border-gray-100 space-y-2 py-8 px-4 text-center rounded-lg">
+            <div className="shadow-md border border-gray-100 space-y-2 p-2 md:py-8 md:px-4 text-center rounded-lg">
               <p className="text-2xl font-semibold text-[#244D3F]">
                 {friend.next_due_date}
               </p>
