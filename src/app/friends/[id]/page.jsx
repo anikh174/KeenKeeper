@@ -8,7 +8,7 @@ import TextToggleBtn from "@/components/Buttons/TextToggleBtn";
 import VideoToggleBtn from "@/components/Buttons/VideoToggleBtn";
 
 const friendsPromise = async function () {
-  const res = await fetch("http://localhost:3000/friendData.json");
+  const res = await fetch("https://keenkeeper-next.vercel.app/friendData.json");
   const data = await res.json();
   return data;
 };

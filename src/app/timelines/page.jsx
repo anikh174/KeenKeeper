@@ -13,7 +13,7 @@ const TimelinePage = () => {
   const { text } = useContext(textContext);
   const { video } = useContext(videoContext);
   return (
-    <div className="w-10/12 mx-auto my-5 lg:my-20 min-h-[60vh]">
+    <div className="w-10/12 mx-auto my-5 lg:my-20">
       <div>
         <div>
           <h2 className="text-[#1F2937] text-3xl md:text-5xl font-bold mb-6">
