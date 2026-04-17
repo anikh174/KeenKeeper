@@ -16,15 +16,18 @@ const StatsPage = () => {
     { name: "Video", value: video.length, fill: "#0088FE" },
   ];
   return (
-    <div className="flex flex-col gap-5 justify-center my-5 md:my-6 lg:my-10 shadow-lg border border-gray-300 container mx-auto p-5 rounded-lg">
-      <h2 className="text-3xl font-bold text-center">Activity <span className="text-green-800">Chart</span></h2>
-      <div className="flex justify-center">
+    <div className="max-w-6xl flex flex-col gap-5 justify-center my-5 md:my-6 lg:my-10 shadow-lg border border-gray-300 container mx-auto p-5 rounded-lg">
+      <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold">Friendship Analytics</h2>
+      <div className="flex flex-col border border-gray-300 rounded-lg p-5">
+
+        <h4 className="font-medium text-[#244D3F] text-sm md:text-lg lg:text-2xl">By Interaction Type</h4>
         <PieChart
           style={{
             width: "100%",
             maxWidth: "500px",
             maxHeight: "80vh",
             aspectRatio: 1,
+            margin: "auto",
           }}
           responsive
         >

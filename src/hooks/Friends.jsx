@@ -1,25 +1,25 @@
-'use client'
+// 'use client'
 
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 
-const useFriends = () => {
-  const [friends, setFriends] = useState([]);
-  const [loading, setLoading] = useState(true);
+// const useFriends = () => {
+//   const [friends, setFriends] = useState([]);
+//   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const res = await fetch("/friendData.json");
-      const data = await res.json();
+//   useEffect(() => {
+//     const fetchData = async () => {
+//       const res = await fetch("/friendData.json");
+//       const data = await res.json();
 
-      setTimeout(() => {
-        setFriends(data);
-        setLoading(false);
-      }, 1000);
-    };
-    fetchData();
-  }, []);
-  return {friends, loading};
-};
+//       setTimeout(() => {
+//         setFriends(data);
+//         setLoading(false);
+//       }, 1000);
+//     };
+//     fetchData();
+//   }, []);
+//   return {friends, loading};
+// };
 
-export default useFriends;
+// export default useFriends;
