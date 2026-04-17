@@ -1,5 +1,8 @@
 import React from "react";
 import MyLink from "./MyLink";
+import { TiHomeOutline } from "react-icons/ti";
+import { MdOutlineAccessTime } from "react-icons/md";
+import { TfiStatsUp } from "react-icons/tfi";
 
 
 const Navbar = () => {
@@ -7,14 +10,17 @@ const Navbar = () => {
   const navItems = [
     {
       path: '/',
+      icon: <TiHomeOutline />,
       text: "Home"
     },
     {
       path: '/timelines',
+      icon: <MdOutlineAccessTime />,
       text: "Timelines"
     },
     {
       path: '/stats',
+      icon: <TfiStatsUp />,
       text: "Stats"
     },
   ];
@@ -27,7 +33,7 @@ const Navbar = () => {
         <div>
             <ul className="flex gap-1 md:gap-3 items-center">
                 {navItems.map((item, ind)=>
-                  <MyLink key={ind} href={item.path}>{item.text}</MyLink>
+                  <MyLink key={ind} href={item.path}><div className="flex gap-1 items-center">{item.icon}{item.text}</div></MyLink>
                 )}
             </ul>
         </div>
